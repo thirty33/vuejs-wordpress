@@ -1,18 +1,20 @@
 <template>
-  <div>
+  <div class="equipo">
         <b-card title=""
                 :img-src="this.data.img"
                 img-alt="Image"
                 img-top
                 tag="article"
-                style="max-width: 15rem;"
-                class="mb-2">
+                style="max-width: inherit;"
+                class="mb-2 equipo_card"
+                :height="this.data.dim"
+                >
             <h3>{{this.data.name}}</h3>
             <h4>{{this.data.type}}</h4>
             <p class="card-text">
             Dimensiones externas (mm)
             </p>
-            <ul>
+            <ul class="equipo_card_ul">
               <li>Alto: {{this.data.height}}</li>
               <li>Ancho: {{this.data.width}}</li>
               <li>Prof: {{this.data.prof}}</li>
@@ -32,7 +34,30 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  .equipo {
+    background-color: #ACACAC;
+    margin: 0 0;
+    &_card {
+      background-color: #ACACAC;
+      margin: 0 0;
+      border: 0 0;
+      border: none !important;
+
+      p {
+        margin-bottom: 0;
+      }
+      &_ul {
+        list-style: none;
+        
+
+        li {
+          padding-left: 78px;
+        }
+      }
+    }
+    
+  }
 
 </style>
 
