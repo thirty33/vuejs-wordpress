@@ -3,7 +3,7 @@
       <b-row>
           <!-- Columna 1 -->
           
-          <b-col md="8">
+          <b-col md="8" cols="12">
               <b-row>
                   <b-col md="12" align-self="end" class="text"> 
 
@@ -14,7 +14,7 @@
               </b-row>
 
               <b-row align-self="end" class="mt-4 mb-2 text">
-                  <b-col md="8">
+                  <b-col md="8" align-self="center" >
                     <h2>Marcos y parrillas grises</h2>
                   </b-col>
                   <b-col>
@@ -30,7 +30,7 @@
           <!-- /Columna 1 -->
 
           <!-- Columna 2 -->
-          <b-col md="4" align-self="center">
+          <b-col md="4"  cols="12" align-self="center">
               <b-img center src="https://firebasestorage.googleapis.com/v0/b/jetsetdatabase.appspot.com/o/logo%20garant%C3%ADa.png?alt=media&token=a488120c-0c88-4d5e-b6fa-e67697e558a2" fluid alt="Responsive image" />
           </b-col>
           <!-- /Columna 2 -->
@@ -56,6 +56,8 @@ export default {
 
   .text {
     text-align: right;
+    font-size: 2rem;
+    padding-left: 66px;
   }
 </style>
 

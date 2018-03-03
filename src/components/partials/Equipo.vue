@@ -36,10 +36,10 @@ export default {
 
 <style lang="scss">
   .equipo {
-    background-color: #ACACAC;
+    // background-color: #ACACAC;
     margin: 0 0;
     &_card {
-      background-color: #ACACAC;
+      background-color: transparent;
       margin: 0 0;
       border: 0 0;
       border: none !important;
@@ -57,6 +57,16 @@ export default {
       }
     }
     
+  }
+
+  .card-body {
+    padding: 0 0 !important;
+    border-right: 1px solid #9D9D9D;
+
+    h4 {
+      border-bottom: 1px solid #9D9D9D;
+      padding-bottom: 16px;
+    }
   }
 
 </style>
